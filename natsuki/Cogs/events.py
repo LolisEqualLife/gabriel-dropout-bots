@@ -37,14 +37,14 @@ class Event(client.Cog): #Silly man class leave alone thx
     @client.Cog.listener()
     async def on_message(self,message):    
         # ------------------------------------------------------------------------------------------------------------------------------------------------
-        dad_words = ["daddy","papa","dad","father"]
-        dad_list = ["Hey! Can you not say that word around me, you jerk??","W-what?? Is Papa here??"] # Just a list of responses to the dad phrase
+        dad_words = ["bakery"]
+        dad_list = ["Have you heard of the Kurumizawa Bakery?"] # Just a list of responses to the dad phrase
 
-        cupcake_words = ["cupcake","cupcakes"]
-        cupcake_list = ["Did someone mention me?", "What did you call me??", "Yes?"]
+        cupcake_words = ["home work","homework"]
+        cupcake_list = ["Homework? You still have a long way to go. I am the Great Archdemon Satanichia, Queen of all Hell! Naturally, I don't do homework!"]
 
-        manga_words = ["manga"]
-        manga_list = ["You like manga, too?? I-I mean, it's not like I like manga or anything...!", "...!", "***MANGA IS LITERATURE!***"]
+        manga_words = ["sick","cold"]
+        manga_list = ["They say the race is the slowest and the steadiest! So I'm too *slow* to catch a cold!"]
         # ------------------------------------------------------------------------------------------------------------------------------------------------
         mct = message.content.lower().split(" ") # (MCT | Meesage Contents)
         for word in mct:
@@ -88,22 +88,22 @@ class Event(client.Cog): #Silly man class leave alone thx
 
             # -------------------------------------------------------Tagging-------------------------------------------------------
         if re.search(f"^<@!?{self.b.user.id}>", message.content): #re check if string *starts with* mentioning me (even if someone nicknames me or not)
-            hi_list = ["Hi, I guess...", "What, do I have to greet you back or something?", "Hey there, Dummy!"]
-            love_list = ["...I love you, too, okay??", "W-what?? Don't expect me to say that I love you back or anything, you d-dummy!", "*urk!* :flushed:", "Shut up! You don't mean that!"]
-            night_list = ["Goodnight, Dummy!", "Goodnight, then.", "You better get good rest or I'll punch you!", "Sleep well, baka!"]
+            hi_list = ["Hello, now tremble in fear before me, lowly human!", "Hello, I am the future Queen of Hell, Kurumizawa Satanichia McDowell!", "You want my name? Proper etiquette is introduce yourself *before* asking another's name!"]
+            love_list = ["W-What?? You love me...?", "Well, I guess the future Queen of Hell loves you too...", "I love you too...but don't expect any mercy!!", ":GDOSataniaEh:", "Eh!?"]
+            night_list = ["Goodnight!", "Goodnight, I promise no nightmares for you tonight!", "Sleep well or you're dealing with me!", "Sleep tight, make ***extra*** sure the bed bugs don't bite!""]
             morning_list = ["Well, it's *A* morning, I guess...", "Good morning to everyone except my dad.", "Did you get a good night's sleep? Er, not that I really care!!"]
             afternoon_list = ["Good afternoon, I guess.", "Afternoon.", "Yeah, so it's the afternoon. What's your point?"]
             compliment_list = ["***I'M NOT CUTE!!!***", "Hey! I'm not cute!", "Sh-shut up! I'm not cute!!", "Have you ever considered that maybe I want to be something other than cute?!"]
             apology_list = ["Hmph. I'll forgive you, but it's not like you deserve it!", "Fine. I guess I'll let it go...", "You better be sorry, you baka!"]
             sickness_list = ["Ok... well you'd better get better soon... not that I care or anything..", "Ok dummy! Get rest!"]
-            otherbestgirl = "Pfft! As if!"
-            bestgirl = "Ha! Of course I am!"
-            monikalove = "Act 2 says otherwise."
-            yurilove = "W-Well it's not like I love her back or anything!!"
-            sayorilove = "S-shut up! No she doesn't!"
-            mclove = "Ha! I'm sure he does! I-I'll believe it when he tells me that himself!"
-            respempty = "Yes?"
-            resbad = "Uh... What?"
+            otherbestgirl = "Really?? As if!"
+            bestgirl = "Well, what did you expect from the future Queen of Hell?!"
+            monikalove = "Wait?! She said that?!."
+            yurilove = "Well, I uh...love her too!!"
+            sayorilove = "Looks like the angel is finally bowing down to me!"
+            mclove = "Well, I guess my plan to scare her didn't work!"
+            respempty = "You called?"
+            resbad = "Not even Satania, the future Queen of Hell, understands you!"
 
 
 			#-------------------- Responding --------------------
@@ -211,12 +211,12 @@ class Event(client.Cog): #Silly man class leave alone thx
         if f"hugs <@{self.b.user.id}>" in message.content.lower() and message.author.id == conf.sayori_id     or     f"hugs @!<{self.b.user.id}>" in message.content.lower() and message.author.id == conf.sayori_id: 
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)  
-            await message.channel.send("H-hey! Let me go, Sayori!!")
+            await message.channel.send("W-What? Hands off!")
 
         if f"hugs <@{self.b.user.id}>" in message.content.lower() and message.author.id == conf.yuri_id     or     f"hugs @!<{self.b.user.id}>" in message.content.lower() and message.author.id == conf.yuri_id: 
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)  
-            await message.channel.send("Geez, Yuri! Don't make it all awkward!")
+            await message.channel.send("Vigne, not right now!")
 
         if f"hugs <@{self.b.user.id}>" in message.content.lower() and message.author.id == conf.monika_id     or     f"hugs @!<{self.b.user.id}>" in message.content.lower() and message.author.id == conf.monika_id:
             async with message.channel.typing():
@@ -226,7 +226,7 @@ class Event(client.Cog): #Silly man class leave alone thx
         if f"hugs <@{self.b.user.id}>" in message.content.lower() and message.author.id == conf.mc_id     or     f"hugs @!<{self.b.user.id}>" in message.content.lower() and message.author.id == conf.mc_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)
-            await message.channel.send(f"Ah! You scared me, <@{conf.mc_id}>")
+            await message.channel.send(f"I, uh...This was unexpected from you <@{conf.mc_id}>")
 
         if "Awww, she does??" in message.content.lower() and message.author.id == conf.sayori_id:
             async with message.channel.typing():
