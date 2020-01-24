@@ -11,23 +11,9 @@ class Changelog(client.Cog):
 
     @client.command()
     async def changelog(self,ctx): 
-        e = discord.Embed(title=f"A bug-fixing update! This has been changed on August 2, 2019. Version: {conf.version}",description='''
+        e = discord.Embed(title=f"No updates as of Janurary 24th, 2020.. Version: {conf.version}",description='''
 ```
-- Fixed self-hug responses [MONIKA, NATSUKI, SAYORI]
-
-- Dokis should tell us poems now [ALL DOKIS]
-
-- Fixed mentioned love responses [ALL DOKIS]
-
-- All commands work in DMs now (except Yuri's Act toggle) [ALL DOKIS]
-
-- Sayori and Natsuki won't print "hugs None" unintentionally [NATSUKI, SAYORI]
-
-- Fixed an issue where Natsuki didn't ping the user when hugging them [NATSUKI]
-
-- Sayori no longer butts into another doki's conversation [SAYORI]
-
-- The rest of the dokis respond to "@MC loves you" in its own way now (it used to be just Sayori doing it) [MONIKA, NATSUKI, YURI]
+- Still in Development, how are you even seeing this.
 ```
 ''', color=conf.norm)
         e.set_author(name=f"The Changelog for {conf.name}.",icon_url=self.b.user.avatar_url)
