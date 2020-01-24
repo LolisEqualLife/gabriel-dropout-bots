@@ -42,3 +42,5 @@ class Developer(client.Cog):
 
 def setup(bot):
     bot.add_cog(Developer(bot))
+
+    
