@@ -12,7 +12,7 @@ class Act_check(client.Cog):
     #A test command to see if the "Act" function is working properly as intended
 
     @client.command()
-    async def act(self,ctx):
+    async def youwontdothiscommandlol(self,ctx):
         try:
             if ctx.guild.id not in conf.act2:
                 await ctx.send("I'm on Act 1.")
