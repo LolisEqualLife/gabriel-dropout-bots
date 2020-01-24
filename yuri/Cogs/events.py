@@ -336,10 +336,10 @@ class Event(client.Cog):
                 await message.channel.send("H-Hey! Don't hug so hard, Sayori!")
 
 
-        if "geez, yuri! don't make it all awkward!" in message.content.lower() and message.author.id == conf.natsuki_id:
+        if "Vigne, not right now!" in message.content.lower() and message.author.id == conf.natsuki_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)
-            await message.channel.send("I'm sorry...")
+            await message.channel.send("Too bad!")
 
         if "w-well it's not like i love her back or anything!!" in message.content.lower() and message.author.id == conf.natsuki_id:  
             if message.guild.id in conf.act2:
