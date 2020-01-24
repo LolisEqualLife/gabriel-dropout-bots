@@ -57,3 +57,5 @@ MC: {conf.mc_id}
 
 def setup(bot):
     bot.add_cog(Debug(bot))
+
+    
