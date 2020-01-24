@@ -159,7 +159,7 @@ class Event(client.Cog):
                 sickness_list = ["O-Oh... I hope y-you feel better soon.", "Oh... please do feel better."]
                 otherbestgirl_list = ["W-Well, I suppose that's true; she's much better than I am..."]
                 bestgirl_list = ["Oh! Uh... Well, I'm glad you think that!"]
-                natsukilove = "Sh-She does?"
+                natsukilove = "She does? That's nice to hear!"
                 monikalove = "Ahaha... I-I'm glad that I have a friend like Monika who loves me... :blush:"
                 sayorilove = "Haha. Well, she is a loving soul."
                 mclove = "Uuuuuuuuuu..."
