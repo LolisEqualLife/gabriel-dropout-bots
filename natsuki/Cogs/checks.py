@@ -21,4 +21,3 @@ def dev():# This check will check if the command is being executed by a develope
         else:
             raise blank
     return commands.check(predicate)
-
