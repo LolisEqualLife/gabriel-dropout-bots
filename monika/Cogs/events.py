@@ -175,7 +175,7 @@ class Event(client.Cog): #Silly man class leave alone thx
             sickness_list = ["Oh! I hope you feel better, after all, I have to take care of my club members!", "I hope you feel better! I'm sure all of the other club members would say the same!"]
             otherbestgirl_list = ["I'm sorry, I didn't catch that. What did you say?", "Hm? Did you say something?", "Ahaha!~ You're funny!"]
             bestgirl_list = ["O-Oh! Out of all the other girls, you think *I'M* the best? Well, that's quite an honor!"]
-            natsukilove = "Oh, really? She, of all people, said that?"
+            natsukilove = "Oh? she actually said that?"
             yurilove = "Well, that's a pleasant surprise! And I understand why she doesn't have the courage to say it to me directly."
             sayorilove = "Ahaha!~ Well, after everything that's happened between us, that's nice to hear!"
             mclove = "He does? Well, that's nice to hear. ~~I'm still not letting anyone else take him from me, though.~~"
