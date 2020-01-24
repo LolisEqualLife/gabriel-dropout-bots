@@ -103,7 +103,7 @@ class Event(client.Cog): #Silly man class leave alone thx
             sayorilove = "Looks like the angel is finally bowing down to me!"
             mclove = "Well, I guess my plan to scare her didn't work!"
             respempty = "You called?"
-            resbad = "Not even Satania, the future Queen of Hell, understands you!"
+            resbad = "The future Queen of Hell does not understand."
 
 
 			#-------------------- Responding --------------------
@@ -228,20 +228,20 @@ class Event(client.Cog): #Silly man class leave alone thx
                 await asyncio.sleep(conf.type_speed)
             await message.channel.send(f"I, uh...This was unexpected from you <@{conf.mc_id}>")
 
-        if "Awww, she does??" in message.content.lower() and message.author.id == conf.sayori_id:
+        if "Wait...she does??" in message.content.lower() and message.author.id == conf.sayori_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)  
-            await message.channel.send("S-shut up! No, I don't!")
+            await message.channel.send("I do not!...")
 
-        if "oh... i see..." in message.content.lower() and message.author.id == conf.yuri_id:
+        if "So you dont love me?" in message.content.lower() and message.author.id == conf.yuri_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)  
-            await message.channel.send("...great, now I look like the bad guy!")
+            await message.channel.send("Wait! Well, I uh...")
 
-        if "sh-she does?" in message.content.lower() and message.author.id == conf.yuri_id:
+        if "She does? That's nice to hear!" in message.content.lower() and message.author.id == conf.yuri_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed) 
-            await message.channel.send("Urk! N-No! Not like that!!")
+            await message.channel.send("Hey!! I do not!")
 
         if "pfft. as if. that immature brat doesn't love anyone but herself." in message.content.lower() and message.author.id == conf.yuri_id:
             async with message.channel.typing():
@@ -263,7 +263,7 @@ class Event(client.Cog): #Silly man class leave alone thx
                 await asyncio.sleep(conf.type_speed) 
             await message.channel.send(":angry:")
 
-        if "oh, really? she, of all people, said that?" in message.content.lower() and message.author.id == conf.monika_id:
+        if "Oh? she actually said that?" in message.content.lower() and message.author.id == conf.monika_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed) 
             await message.channel.send("***NO!!!*** I never said that!!")
