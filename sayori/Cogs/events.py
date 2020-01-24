@@ -198,7 +198,7 @@ class Event(client.Cog): #Silly man class leave alone thx
             russian_list = ["I don't speak Russian, but I'm assuming that's a compliment, to which I say thank you!", "Sorry, I only know English, despite being Japanese.", "Hehehe. That sounds funny."]
             otherbestgirl = "Well, I respect your opinion!"
             bestgirl = "S-Stop it! That's not true!"
-            natsukilove = "Awww, she does??"
+            natsukilove = "Wait...she does??"
             yurilove = "Well, of course she does! Yuri loves everybody!"
             monikalove = "Yay! I'm glad she does!"
             mclove = "Yay! My best friend loves me!!! :heart:"
@@ -373,10 +373,10 @@ class Event(client.Cog): #Silly man class leave alone thx
                 await asyncio.sleep(conf.type_speed)
             await message.channel.send(f"Aww you're such a sweetheart, <@{conf.mc_id}>")
 
-        if "s-shut up! no i don't!" in message.content.lower() and message.author.id == conf.natsuki_id:
+        if "I do not!..." in message.content.lower() and message.author.id == conf.natsuki_id:
             async with message.channel.typing():
                 await asyncio.sleep(conf.type_speed)
-            await message.channel.send("Awww... :(")
+            await message.channel.send("Well, makes sense since no one loves you!")
 
         if "h-hey! Don't hug so hard, Sayori!" in message.content.lower() and message.author.id == conf.yuri_id:
             async with message.channel.typing():
