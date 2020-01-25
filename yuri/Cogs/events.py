@@ -149,22 +149,22 @@ class Event(client.Cog):
 
             #-------------------- Act 1 --------------------
             if message.guild.id not in conf.act2:
-                hi_list = ["H-Hello there.", "...h-hi...", "O-Oh, are you talking to me? S-Sorry, I'm not used to that..."]
-                love_list = ["O-Oh! W-W-Well, uhh... :flushed:", "I-I love you, too... :relaxed:", "R-Really? Why? I-I don't have anything worth loving...", "Uuu, why is my heart beating so fast right now??"]
-                night_list = ["G-Goodnight, then.", "Until next time.", "I hope you have wonderful dreams!"]
+                hi_list = ["Hello there.", "Hello, my beloved! Nice to see you!", "Hello, my name is Vignette April Tsukinose!"]
+                love_list = ["O-Oh! W-Well, uhh... thank you, I love you too...", "I love you, too...", "Really? I don't have anything worth loving?", "Why is my heart beating so fast right now??"]
+                night_list = ["Goodnight, then.", "Until next time.", "I hope you have wonderful dreams!"]
                 morning_list = ["It is a good morning, indeed.", "I hope you slept wonderfully!", "Good morning!"]
-                afternoon_list = ["Good afternoon.", "A truly beautiful afternoon, it is.", "Ah, it's times like this where I just want to sit outsite and read a good book."]
-                compliment_list = ["Y-You really think so...?", "Uuu... :flushed:", "T-Thank you. I needed to hear that...", ":blush:"]
-                apology_list = ["I don't think I fully understand why you're apologizing, but I accept it, anyway.", "It's alright; I forgive you.", "N-No, I'm the one who should be sorry; I mess up everything...", "Consider your apology accepted, then!"]
-                sickness_list = ["O-Oh... I hope y-you feel better soon.", "Oh... please do feel better."]
-                otherbestgirl_list = ["W-Well, I suppose that's true; she's much better than I am..."]
+                afternoon_list = ["Good afternoon.", "A truly beautiful afternoon, it is.", "Ah, it's times like this where I just want to walk around and do some cleaning."]
+                compliment_list = ["You really think so...?", "Thank you. that is nice to hear..", ":blush:"]
+                apology_list = ["I don't think I fully understand why you're apologizing, but I accept it, anyway.", "It's alright; I forgive you.", "Consider your apology accepted, then!"]
+                sickness_list = ["Oh... I hope you feel better soon.", "Oh... please do feel better."]
+                otherbestgirl_list = ["Well, I suppose that's true; she's much better than I am..."]
                 bestgirl_list = ["Oh! Uh... Well, I'm glad you think that!"]
                 natsukilove = "She does? That's nice to hear!"
                 monikalove = "Ahaha... I-I'm glad that I have a friend like Monika who loves me... :blush:"
-                sayorilove = "Haha. Well, she is a loving soul."
-                mclove = "Uuuuuuuuuu..."
+                sayorilove = "Haha. Well, she is a loving soul...most of the time."
+                mclove = "Yay!"
                 resempty = ["Yes?", "What's up?", "Hm?"]
-                resbad= "I'm sorry, what?..."
+                resbad= "I'm sorry, what?"
 
 			#-------------------- Act 2 --------------------
             elif message.guild.id in conf.act2:
@@ -321,7 +321,7 @@ class Event(client.Cog):
             else:
                 async with message.channel.typing():
                     await asyncio.sleep(conf.type_speed)
-                await message.channel.send("O-Oh! Well, uh, thank you, Monika.")
+                await message.channel.send("Oh! Well, uh, thank you, Gabriel.")
                         
 
         if f"hugs <@{self.b.user.id}>" in message.content.lower() and message.author.id == conf.sayori_id     or     f"hugs @!<{self.b.user.id}>" in message.content.lower() and message.author.id == conf.sayori_id: #Sayori
@@ -333,7 +333,7 @@ class Event(client.Cog):
             else:
                 async with message.channel.typing():
                     await asyncio.sleep(conf.type_speed)
-                await message.channel.send("H-Hey! Don't hug so hard, Sayori!")
+                await message.channel.send("Hey! Don't hug so hard!")
 
 
         if "Vigne, not right now!" in message.content.lower() and message.author.id == conf.natsuki_id:
@@ -341,7 +341,7 @@ class Event(client.Cog):
                 await asyncio.sleep(conf.type_speed)
             await message.channel.send("Too bad!")
 
-        if "w-well it's not like i love her back or anything!!" in message.content.lower() and message.author.id == conf.natsuki_id:  
+        if "Hey!! I do not!" in message.content.lower() and message.author.id == conf.natsuki_id:  
             if message.guild.id in conf.act2:
                 async with message.channel.typing():
                     await asyncio.sleep(conf.type_speed)
@@ -350,7 +350,7 @@ class Event(client.Cog):
             else:
                 async with message.channel.typing():
                     await asyncio.sleep(conf.type_speed)
-                await message.channel.send("Oh... I see...")
+                await message.channel.send("So you dont love me?")
                     
 
         if "what the hell?? yuri, why would you say something so mean??" in message.content.lower() and message.author.id == conf.natsuki_id:  
