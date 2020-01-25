@@ -91,10 +91,10 @@ class Event(client.Cog): #Silly man class leave alone thx
             hi_list = ["Hello, now tremble in fear before me, lowly human!", "Hello, I am the future Queen of Hell, Kurumizawa Satanichia McDowell!", "You want my name? Proper etiquette is introduce yourself *before* asking another's name!"]
             love_list = ["W-What?? You love me...?", "Well, I guess the future Queen of Hell loves you too...", "I love you too...but don't expect any mercy!!", ":GDOSataniaEh:", "Eh!?"]
             night_list = ["Goodnight!", "Goodnight, I promise no nightmares for you tonight!", "Sleep well or you're dealing with me!", "Sleep tight, make ***extra*** sure the bed bugs don't bite!""]
-            morning_list = ["Well, it's *A* morning, I guess...", "Good morning to everyone except my dad.", "Did you get a good night's sleep? Er, not that I really care!!"]
-            afternoon_list = ["Good afternoon, I guess.", "Afternoon.", "Yeah, so it's the afternoon. What's your point?"]
-            compliment_list = ["***I'M NOT CUTE!!!***", "Hey! I'm not cute!", "Sh-shut up! I'm not cute!!", "Have you ever considered that maybe I want to be something other than cute?!"]
-            apology_list = ["Hmph. I'll forgive you, but it's not like you deserve it!", "Fine. I guess I'll let it go...", "You better be sorry, you baka!"]
+            morning_list = ["Well, the day is just getting started!", "Did you get a good night's sleep? I mean Satania likes to look over people as well!!"]
+            afternoon_list = ["Good afternoon.", "Afternoon.", "Well, good afternoon to you too!!"]
+            compliment_list = ["I-I uh, thank you for making me for better,", "You think im cute?...", "Well I *do* work hard, thank you!!"]
+            apology_list = ["I'll forgive you, but dont expect me to be so forgiving next time!", "I guess it is no big deal...", "You better be sorry!"]
             sickness_list = ["Ok... well you'd better get better soon... not that I care or anything..", "Ok dummy! Get rest!"]
             otherbestgirl = "Really?? As if!"
             bestgirl = "Well, what did you expect from the future Queen of Hell?!"
