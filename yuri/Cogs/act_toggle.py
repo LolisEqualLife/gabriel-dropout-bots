@@ -12,7 +12,7 @@ class act_toggle(client.Cog):
     @client.command()
     @client.has_permissions(manage_messages=True) #Change this to "manage_messages"
     @client.guild_only()
-    async def youwontseethislolhi(self,ctx): 
+    async def act1(self,ctx): 
         if ctx.guild.id in conf.act2:
             conf.act2.remove(ctx.guild.id) #If the ID is already in act2 but we're trying to get back into act1 just remove it from act2
             await ctx.send("O-Oh... Wh-What just happened? I feel funny...")
@@ -24,7 +24,7 @@ class act_toggle(client.Cog):
     @client.command()
     @client.has_permissions(manage_messages=True) #Cooldowns when
     @client.guild_only()
-    async def youwontseethislolhihi(self,ctx): 
+    async def act2(self,ctx): 
         if ctx.guild.id not in conf.act2:
             conf.act2.insert(0, ctx.guild.id) #Inserting the ID into act1 so if that id matches the guild ID we run in act1 mode and not act2 mode 
             await ctx.send("Ha. Haha. HAHAHAHAHHAHAHA!!!!")
